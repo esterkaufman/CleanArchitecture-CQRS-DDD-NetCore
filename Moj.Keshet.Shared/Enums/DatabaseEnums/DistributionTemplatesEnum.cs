@@ -1,0 +1,38 @@
+namespace Moj.Keshet.Shared.Enums.DatabaseEnums
+{
+	public enum DistributionTemplatesEnum
+	{
+		Template_1 = 1,
+		Template_2 = 2,
+		Template_3 = 3,
+		Template_4 = 4,
+		Template_5 = 5,
+		Template_6 = 6,
+		Template_7 = 7,
+		Template_8 = 8,
+		Template_9 = 9,
+		Template_10 = 10,
+		Template_11 = 11,
+		Template_12 = 12,
+		Template_17 = 17,
+		Template_19 = 19,
+		Template_20 = 20,
+		Template_22 = 22,
+		Template_23 = 23,
+		Template_25 = 25,
+		Template_26 = 26,
+		Template_27 = 27,
+		Template_28 = 28,
+		Template_29 = 29,
+		Template_31 = 31,
+		Template_32 = 32,
+		Template_33 = 33,
+		Template_34 = 34,
+		Template_35 = 35,
+		Template_36 = 36,
+		Template_39 = 39,
+		Template_40 = 40,
+		Template_41 = 41,
+		Template_227 = 227,
+	}
+}

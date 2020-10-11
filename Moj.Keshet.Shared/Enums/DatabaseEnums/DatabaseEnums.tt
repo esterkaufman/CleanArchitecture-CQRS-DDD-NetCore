@@ -1,0 +1,69 @@
+﻿<#@ template language="C#" debug="true" hostspecific="true"#>
+<#@ include file="EF.Utility.CS.ttinclude"#>
+<#@ import namespace="System.Data.SqlClient" #> 
+<#
+
+///////////////////////TEMPLATE PARAMETES////////////////////////////////////
+//Database connection string
+var connectionString = @"Data Source=DEV-SRV12APP9;Initial Catalog=Keshet;Integrated Security=True;multipleactiveresultsets=True;";
+
+//Enum value column name:
+var enumDescriptionColumnName = "EnumDescription";
+
+//Enum namespace
+var enumNameSpace = "Moj.Keshet.Shared.Enums.DatabaseEnums";
+var fileManager = EntityFrameworkTemplateFileManager.Create(this);
+var codeGenerationTools = new CodeGenerationTools(this);
+
+//Open ADO connection
+var connection = new SqlConnection(connectionString);
+var command = connection.CreateCommand();
+connection.Open();
+
+command.CommandText = string.Format(@"SELECT DISTINCT t.NAME ,SCHEMA_NAME(schema_id) as SCHEMANAME
+                                                              FROM SYS.tables as t
+                                                              INNER JOIN SYS.columns AS c ON t.object_id = c.object_id
+                                                              AND c.name = '{0}'",enumDescriptionColumnName
+                                                              );
+var tableReader = command.ExecuteReader();
+var enumTables = new Dictionary<string,string>();
+while (tableReader.Read())
+{
+	if(tableReader["SCHEMANAME"].ToString() == "dbo" ){
+		enumTables.Add(tableReader["NAME"].ToString(),"dbo");
+	}
+}
+connection.Close();
+
+foreach (var tableName in enumTables)
+{
+	connection.Open();
+	var enumName = tableName.Key;
+	fileManager.StartNewFile(enumName + "Enum.cs");
+
+//Start write enum file:		
+#>
+namespace <#=enumNameSpace#>
+{
+	public enum <#=enumName#>Enum
+	{
+	<#
+	command.CommandText = string.Format("SELECT * FROM {1}.{0}",codeGenerationTools.Escape(tableName.Key),tableName.Value);
+	var columnReader = command.ExecuteReader();
+	while (columnReader.Read())
+	{
+		//Fill only the values that the field "enumDescriptionColumnName" have value
+		if(!string.IsNullOrEmpty(columnReader[enumDescriptionColumnName].ToString().Trim()))
+		{
+		#>
+	<#=columnReader[enumDescriptionColumnName].ToString()#> = <#=columnReader[0].ToString()#>,
+	<# }	}
+	#>}
+}
+<#
+	connection.Close();	
+}
+fileManager.Process();
+#>
+
+

@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moj.Keshet.Services", "Moj.Keshet.Services\Moj.Keshet.Services.csproj", "{A8CD5C4A-F2B3-4857-B52C-C28E4EC80536}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moj.Keshet.Repositories", "Moj.Keshet.Repositories\Moj.Keshet.Repositories.csproj", "{BEA757E9-16D5-43C2-960D-52E6FA036FC1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moj.Keshet.Api", "Moj.Keshet.Api\Moj.Keshet.Api.csproj", "{CDC58AFE-63F4-4D37-883B-9C45BF4A0AAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B1991565-6F21-4854-A07E-2260D1AE46A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{143E8AF8-7A53-46FB-A911-1150560A4F96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F0F06425-1515-4522-95A4-7C334CB22093}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A1A4578B-3B5D-42FE-A535-2FEDAEC98186}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{99C1DC9D-9B3C-4ADF-840B-2C2D456E7377}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moj.Keshet.Domain", "Moj.Keshet.Domain\Moj.Keshet.Domain.csproj", "{93D7DE4D-6366-4F9D-AE97-9A62E421F373}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moj.Keshet.Shared", "Moj.Keshet.Shared\Moj.Keshet.Shared.csproj", "{A23EEF73-4DBA-4B8F-8585-ACF35DCF3583}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IOC", "IOC", "{1B90CB46-B157-41E5-96ED-4772874765B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moj.Keshet.Ioc", "Moj.Keshet.Ioc\Moj.Keshet.Ioc.csproj", "{745D712A-68EB-4F67-B01F-701302649553}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8CD5C4A-F2B3-4857-B52C-C28E4EC80536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CD5C4A-F2B3-4857-B52C-C28E4EC80536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CD5C4A-F2B3-4857-B52C-C28E4EC80536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CD5C4A-F2B3-4857-B52C-C28E4EC80536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA757E9-16D5-43C2-960D-52E6FA036FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA757E9-16D5-43C2-960D-52E6FA036FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA757E9-16D5-43C2-960D-52E6FA036FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA757E9-16D5-43C2-960D-52E6FA036FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC58AFE-63F4-4D37-883B-9C45BF4A0AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC58AFE-63F4-4D37-883B-9C45BF4A0AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC58AFE-63F4-4D37-883B-9C45BF4A0AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC58AFE-63F4-4D37-883B-9C45BF4A0AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D7DE4D-6366-4F9D-AE97-9A62E421F373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D7DE4D-6366-4F9D-AE97-9A62E421F373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D7DE4D-6366-4F9D-AE97-9A62E421F373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D7DE4D-6366-4F9D-AE97-9A62E421F373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23EEF73-4DBA-4B8F-8585-ACF35DCF3583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23EEF73-4DBA-4B8F-8585-ACF35DCF3583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23EEF73-4DBA-4B8F-8585-ACF35DCF3583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23EEF73-4DBA-4B8F-8585-ACF35DCF3583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745D712A-68EB-4F67-B01F-701302649553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745D712A-68EB-4F67-B01F-701302649553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745D712A-68EB-4F67-B01F-701302649553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745D712A-68EB-4F67-B01F-701302649553}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8CD5C4A-F2B3-4857-B52C-C28E4EC80536} = {143E8AF8-7A53-46FB-A911-1150560A4F96}
+		{BEA757E9-16D5-43C2-960D-52E6FA036FC1} = {A1A4578B-3B5D-42FE-A535-2FEDAEC98186}
+		{CDC58AFE-63F4-4D37-883B-9C45BF4A0AAD} = {B1991565-6F21-4854-A07E-2260D1AE46A5}
+		{93D7DE4D-6366-4F9D-AE97-9A62E421F373} = {F0F06425-1515-4522-95A4-7C334CB22093}
+		{A23EEF73-4DBA-4B8F-8585-ACF35DCF3583} = {99C1DC9D-9B3C-4ADF-840B-2C2D456E7377}
+		{745D712A-68EB-4F67-B01F-701302649553} = {1B90CB46-B157-41E5-96ED-4772874765B5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDF27425-3891-4953-B2D9-9BED05B8881B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://main-jr-tfs:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Moj.Keshet.Api\\Moj.Keshet.Api.csproj
+		SccProjectTopLevelParentUniqueName1 = Moj.Keshet.Rest.sln
+		SccProjectName1 = Moj.Keshet.Api
+		SccLocalPath1 = Moj.Keshet.Api
+		SccProjectUniqueName2 = Moj.Keshet.Services\\Moj.Keshet.Services.csproj
+		SccProjectTopLevelParentUniqueName2 = Moj.Keshet.Rest.sln
+		SccProjectName2 = Moj.Keshet.Services
+		SccLocalPath2 = Moj.Keshet.Services
+		SccProjectUniqueName3 = Moj.Keshet.Repositories\\Moj.Keshet.Repositories.csproj
+		SccProjectTopLevelParentUniqueName3 = Moj.Keshet.Rest.sln
+		SccProjectName3 = Moj.Keshet.Repositories
+		SccLocalPath3 = Moj.Keshet.Repositories
+		SccProjectUniqueName4 = Moj.Keshet.Domain\\Moj.Keshet.Domain.csproj
+		SccProjectTopLevelParentUniqueName4 = Moj.Keshet.Rest.sln
+		SccProjectName4 = Moj.Keshet.Domain
+		SccLocalPath4 = Moj.Keshet.Domain
+		SccProjectUniqueName5 = Moj.Keshet.Shared\\Moj.Keshet.Shared.csproj
+		SccProjectTopLevelParentUniqueName5 = Moj.Keshet.Rest.sln
+		SccProjectName5 = Moj.Keshet.Shared
+		SccLocalPath5 = Moj.Keshet.Shared
+		SccProjectUniqueName6 = Moj.Keshet.Ioc\\Moj.Keshet.Ioc.csproj
+		SccProjectTopLevelParentUniqueName6 = Moj.Keshet.Rest.sln
+		SccProjectName6 = Moj.Keshet.Ioc
+		SccLocalPath6 = Moj.Keshet.Ioc
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Data Source=dev-srv12app9;Initial Catalog=Keshet;User ID=OfekUser;Password=Ofek#2017!;Trusted_Connection=True;MultipleActiveResultSets=true;" Microsoft.EntityFrameworkCore.SqlServer -Schemas "dbo","common" -Context KeshetEntitySets  -OutputDir Models -Force -DataAnnotations -UseDatabaseNames

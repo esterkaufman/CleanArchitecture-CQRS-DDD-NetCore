@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Moj.Keshet.Domain\Moj.Keshet.Domain.csproj" />
+    <ProjectReference Include="..\Moj.Keshet.Repositories\Moj.Keshet.Repositories.csproj" />
+    <ProjectReference Include="..\Moj.Keshet.Services\Moj.Keshet.Services.csproj" />
+    <ProjectReference Include="..\Moj.Keshet.Shared\Moj.Keshet.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
