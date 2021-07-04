@@ -1,5 +1,6 @@
 # .NetCore 3 micro service with CleanArchitecture,CQRS, DDD 
-## This service contains template for an application structured by CleanArchitecture (produce by Uncle Bob Martin)
+### This is a template for an application structured by CleanArchitecture 
+**(Produce by Uncle Bob Martin)**
 
 Also, this work with the **Domain Driven Design** pattern, where all application parts splitted to domains as Documents domain, Processes Domain and etc.
 
